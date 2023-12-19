@@ -19,6 +19,9 @@
 		493480692B31A2E80069F09D /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 493480682B31A2E80069F09D /* RxCocoa */; };
 		493480712B31A2E80069F09D /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 493480702B31A2E80069F09D /* RxSwift */; };
 		493480792B31A7030069F09D /* CryptoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493480782B31A7030069F09D /* CryptoTableViewCell.swift */; };
+		4934807C2B31AD300069F09D /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 4934807B2B31AD300069F09D /* DGCharts */; };
+		4934807E2B31AD300069F09D /* DGChartsDynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 4934807D2B31AD300069F09D /* DGChartsDynamic */; };
+		493480822B31B5FA0069F09D /* ChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493480812B31B5FA0069F09D /* ChartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,7 @@
 		4934804B2B30A9A70069F09D /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		4934804D2B319D8A0069F09D /* CryptoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewModel.swift; sourceTree = "<group>"; };
 		493480782B31A7030069F09D /* CryptoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoTableViewCell.swift; sourceTree = "<group>"; };
+		493480812B31B5FA0069F09D /* ChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4934807E2B31AD300069F09D /* DGChartsDynamic in Frameworks */,
 				493480692B31A2E80069F09D /* RxCocoa in Frameworks */,
+				4934807C2B31AD300069F09D /* DGCharts in Frameworks */,
 				493480712B31A2E80069F09D /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +93,7 @@
 				493480332B308B550069F09D /* SceneDelegate.swift */,
 				493480352B308B550069F09D /* ViewController.swift */,
 				493480782B31A7030069F09D /* CryptoTableViewCell.swift */,
+				493480812B31B5FA0069F09D /* ChartViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -134,6 +141,8 @@
 			packageProductDependencies = (
 				493480682B31A2E80069F09D /* RxCocoa */,
 				493480702B31A2E80069F09D /* RxSwift */,
+				4934807B2B31AD300069F09D /* DGCharts */,
+				4934807D2B31AD300069F09D /* DGChartsDynamic */,
 			);
 			productName = CryptoCrazyMVVMRx;
 			productReference = 4934802E2B308B550069F09D /* CryptoCrazyMVVMRx.app */;
@@ -165,6 +174,7 @@
 			mainGroup = 493480252B308B550069F09D;
 			packageReferences = (
 				4934804F2B319F330069F09D /* XCRemoteSwiftPackageReference "RxSwift" */,
+				4934807A2B31AD300069F09D /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 4934802F2B308B550069F09D /* Products */;
 			projectDirPath = "";
@@ -198,6 +208,7 @@
 				493480322B308B550069F09D /* AppDelegate.swift in Sources */,
 				4934804C2B30A9A70069F09D /* WebService.swift in Sources */,
 				493480342B308B550069F09D /* SceneDelegate.swift in Sources */,
+				493480822B31B5FA0069F09D /* ChartViewController.swift in Sources */,
 				4934804E2B319D8A0069F09D /* CryptoViewModel.swift in Sources */,
 				493480792B31A7030069F09D /* CryptoTableViewCell.swift in Sources */,
 			);
@@ -432,6 +443,14 @@
 				minimumVersion = 6.6.0;
 			};
 		};
+		4934807A2B31AD300069F09D /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -444,6 +463,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 4934804F2B319F330069F09D /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
+		};
+		4934807B2B31AD300069F09D /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4934807A2B31AD300069F09D /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+		4934807D2B31AD300069F09D /* DGChartsDynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4934807A2B31AD300069F09D /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGChartsDynamic;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

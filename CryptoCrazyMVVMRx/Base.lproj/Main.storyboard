@@ -75,11 +75,28 @@
                     <connections>
                         <outlet property="indicatorView" destination="SYU-i6-K7z" id="r7E-FB-XRS"/>
                         <outlet property="tableView" destination="6EK-8n-3j5" id="feb-eP-9AF"/>
+                        <segue destination="nE4-xp-PEa" kind="show" identifier="ToChartView" id="o0k-tE-FAn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+        <!--Chart View Controller-->
+        <scene sceneID="IO2-Ba-Odc">
+            <objects>
+                <viewController storyboardIdentifier="ChartView" id="nE4-xp-PEa" customClass="ChartViewController" customModule="CryptoCrazyMVVMRx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Vid-oC-TRv">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="ejo-7b-4vM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Ha9-dE-WXP"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xw4-Qv-FuE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="3"/>
         </scene>
     </scenes>
     <resources>

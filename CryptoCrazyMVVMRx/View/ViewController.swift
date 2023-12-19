@@ -8,6 +8,8 @@
 import UIKit
 import RxSwift
 import RxCocoa
+
+
 class ViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet var tableView: UITableView!
@@ -15,7 +17,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet var indicatorView: UIActivityIndicatorView!
     
     
-    var cryptoes : Cryptoes? = nil
+    var cryptoes : [Crypto] = []
     let disposeBag = DisposeBag()
     
     let cryptoVM = CryptoViewModel()
@@ -29,6 +31,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         // Do any additional setup after loading the view.
     }
     
+
     
     
     
@@ -42,6 +45,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
         
         cryptoVM.cryptoes.observe(on: MainScheduler.asyncInstance).bind(to: tableView.rx.items(cellIdentifier: "CryptoCell", cellType: CryptoTableViewCell.self)){row,item,cell in
             cell.item = item
+            self.cryptoes.append(item)
         }.disposed(by: disposeBag)
         
 //        cryptoVM.cryptoes.observe(on: MainScheduler.asyncInstance).subscribe{ cryptoes in
@@ -57,7 +61,13 @@ class ViewController: UIViewController, UIScrollViewDelegate {
 
 extension ViewController : UITableViewDelegate{
    
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let screen = storyboard.instantiateViewController(withIdentifier: "ChartView") as! ChartViewController
+        self.navigationController?.pushViewController(screen, animated: true)
+        
+    }
     
 }
 

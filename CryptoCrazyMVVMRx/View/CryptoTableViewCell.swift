@@ -29,5 +29,8 @@ class CryptoTableViewCell: UITableViewCell {
             self.priceCell.text = item.priceUsd
         }
     }
+    
+    
+    
 
 }
