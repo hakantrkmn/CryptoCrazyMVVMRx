@@ -23,6 +23,7 @@ class ViewController: UIViewController, UIScrollViewDelegate {
     let cryptoVM = CryptoViewModel()
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Home"
         //tableView.delegate = self
         //tableView.dataSource = self
         tableView.rx.setDelegate(self).disposed(by: disposeBag)
@@ -65,6 +66,9 @@ extension ViewController : UITableViewDelegate{
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let screen = storyboard.instantiateViewController(withIdentifier: "ChartView") as! ChartViewController
+
+        screen.crypto = cryptoes[indexPath.row]
+        
         self.navigationController?.pushViewController(screen, animated: true)
         
     }

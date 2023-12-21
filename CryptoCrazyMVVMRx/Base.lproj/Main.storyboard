@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFM-U4-PK1">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6EK-8n-3j5">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CryptoCell" rowHeight="73" id="FGe-wP-l1R" customClass="CryptoTableViewCell" customModule="CryptoCrazyMVVMRx" customModuleProvider="target">
@@ -72,31 +72,51 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="6EK-8n-3j5" secondAttribute="bottom" id="yM5-RJ-hat"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="boM-n6-Fc2"/>
                     <connections>
                         <outlet property="indicatorView" destination="SYU-i6-K7z" id="r7E-FB-XRS"/>
                         <outlet property="tableView" destination="6EK-8n-3j5" id="feb-eP-9AF"/>
-                        <segue destination="nE4-xp-PEa" kind="show" identifier="ToChartView" id="o0k-tE-FAn"/>
+                        <segue destination="nE4-xp-PEa" kind="show" id="Nqh-Fr-m1B"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="150" y="-113"/>
         </scene>
         <!--Chart View Controller-->
         <scene sceneID="IO2-Ba-Odc">
             <objects>
                 <viewController storyboardIdentifier="ChartView" id="nE4-xp-PEa" customClass="ChartViewController" customModule="CryptoCrazyMVVMRx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vid-oC-TRv">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="ejo-7b-4vM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Ha9-dE-WXP"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="Ha9-dE-WXP"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xw4-Qv-FuE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="3"/>
+            <point key="canvasLocation" x="884.73282442748086" y="-113.38028169014085"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="HGg-0V-ibc">
+            <objects>
+                <navigationController id="xFM-U4-PK1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="d32-Kb-jB4">
+                        <rect key="frame" x="0.0" y="59" width="393" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="A95-i8-iNM">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="nH6-lg-jWa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pyo-mp-Kp0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-628" y="-112"/>
         </scene>
     </scenes>
     <resources>
