@@ -46,7 +46,7 @@ class ChartViewController: UIViewController {
         var entries = [CandleChartDataEntry]()
         
         for x in cryptoData {
-            entries.append(CandleChartDataEntry(x: Double(x.period!) ?? 0 ,
+            entries.append(CandleChartDataEntry(x: Double(x.period!) ,
                                                 shadowH: Double(x.high!) ?? 0,
                                                 shadowL: Double(x.low!) ?? 0,
                                                 open: Double(x.open!) ?? 0,

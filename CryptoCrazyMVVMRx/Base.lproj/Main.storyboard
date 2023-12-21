@@ -28,13 +28,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cGB-fQ-OBu">
-                                                    <rect key="frame" x="2" y="3" width="389" height="21"/>
+                                                    <rect key="frame" x="10" y="3" width="373" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g4S-Ce-hPZ">
-                                                    <rect key="frame" x="2" y="54" width="35.333333333333336" height="17"/>
+                                                    <rect key="frame" x="10" y="54" width="35.333333333333336" height="17"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="17" id="CTd-xz-dvP"/>
                                                     </constraints>
@@ -46,9 +46,9 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottom" secondItem="g4S-Ce-hPZ" secondAttribute="bottom" constant="2" id="3tm-uy-eAk"/>
                                                 <constraint firstItem="cGB-fQ-OBu" firstAttribute="top" secondItem="7kY-do-8hx" secondAttribute="top" constant="3" id="IhJ-7n-ryR"/>
-                                                <constraint firstAttribute="trailing" secondItem="cGB-fQ-OBu" secondAttribute="trailing" constant="2" id="NF8-Z6-GoE"/>
-                                                <constraint firstItem="g4S-Ce-hPZ" firstAttribute="leading" secondItem="7kY-do-8hx" secondAttribute="leading" constant="2" id="nl7-QW-Zs3"/>
-                                                <constraint firstItem="cGB-fQ-OBu" firstAttribute="leading" secondItem="7kY-do-8hx" secondAttribute="leading" constant="2" id="oBI-UV-eBf"/>
+                                                <constraint firstAttribute="trailing" secondItem="cGB-fQ-OBu" secondAttribute="trailing" constant="10" id="NF8-Z6-GoE"/>
+                                                <constraint firstItem="g4S-Ce-hPZ" firstAttribute="leading" secondItem="7kY-do-8hx" secondAttribute="leading" constant="10" id="nl7-QW-Zs3"/>
+                                                <constraint firstItem="cGB-fQ-OBu" firstAttribute="leading" secondItem="7kY-do-8hx" secondAttribute="leading" constant="10" id="oBI-UV-eBf"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
