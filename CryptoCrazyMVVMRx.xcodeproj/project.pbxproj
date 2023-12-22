@@ -10,7 +10,6 @@
 		493480322B308B550069F09D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493480312B308B550069F09D /* AppDelegate.swift */; };
 		493480342B308B550069F09D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493480332B308B550069F09D /* SceneDelegate.swift */; };
 		493480362B308B550069F09D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493480352B308B550069F09D /* ViewController.swift */; };
-		493480392B308B550069F09D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 493480372B308B550069F09D /* Main.storyboard */; };
 		4934803B2B308B560069F09D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4934803A2B308B560069F09D /* Assets.xcassets */; };
 		4934803E2B308B560069F09D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4934803C2B308B560069F09D /* LaunchScreen.storyboard */; };
 		4934804A2B30A25B0069F09D /* Crypto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493480492B30A25B0069F09D /* Crypto.swift */; };
@@ -25,6 +24,8 @@
 		493480842B31E1B00069F09D /* CryptoCandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493480832B31E1B00069F09D /* CryptoCandle.swift */; };
 		493480862B31E2CF0069F09D /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493480852B31E2CF0069F09D /* ChartViewModel.swift */; };
 		493480882B31EB580069F09D /* candle.json in Resources */ = {isa = PBXBuildFile; fileRef = 493480872B31EB580069F09D /* candle.json */; };
+		4934808B2B34491A0069F09D /* CurrencyTableCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934808A2B34491A0069F09D /* CurrencyTableCVCell.swift */; };
+		4934808E2B35B6F70069F09D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4934808D2B35B6F70069F09D /* Utility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +33,6 @@
 		493480312B308B550069F09D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		493480332B308B550069F09D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		493480352B308B550069F09D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		493480382B308B550069F09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4934803A2B308B560069F09D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4934803D2B308B560069F09D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4934803F2B308B560069F09D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -44,6 +44,8 @@
 		493480832B31E1B00069F09D /* CryptoCandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCandle.swift; sourceTree = "<group>"; };
 		493480852B31E2CF0069F09D /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		493480872B31EB580069F09D /* candle.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = candle.json; sourceTree = "<group>"; };
+		4934808A2B34491A0069F09D /* CurrencyTableCVCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTableCVCell.swift; sourceTree = "<group>"; };
+		4934808D2B35B6F70069F09D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +82,12 @@
 		493480302B308B550069F09D /* CryptoCrazyMVVMRx */ = {
 			isa = PBXGroup;
 			children = (
+				4934808C2B35B6EC0069F09D /* Utility */,
+				493480892B3448B50069F09D /* UIElements */,
 				493480482B308E4E0069F09D /* Service */,
 				493480472B308E0D0069F09D /* Model */,
 				493480462B308E030069F09D /* ViewModel */,
 				493480452B308DEA0069F09D /* View */,
-				493480372B308B550069F09D /* Main.storyboard */,
 				4934803A2B308B560069F09D /* Assets.xcassets */,
 				4934803C2B308B560069F09D /* LaunchScreen.storyboard */,
 				4934803F2B308B560069F09D /* Info.plist */,
@@ -129,6 +132,22 @@
 				4934804B2B30A9A70069F09D /* WebService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		493480892B3448B50069F09D /* UIElements */ = {
+			isa = PBXGroup;
+			children = (
+				4934808A2B34491A0069F09D /* CurrencyTableCVCell.swift */,
+			);
+			path = UIElements;
+			sourceTree = "<group>";
+		};
+		4934808C2B35B6EC0069F09D /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				4934808D2B35B6F70069F09D /* Utility.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,7 +221,6 @@
 				4934803E2B308B560069F09D /* LaunchScreen.storyboard in Resources */,
 				4934803B2B308B560069F09D /* Assets.xcassets in Resources */,
 				493480882B31EB580069F09D /* candle.json in Resources */,
-				493480392B308B550069F09D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +236,10 @@
 				493480322B308B550069F09D /* AppDelegate.swift in Sources */,
 				4934804C2B30A9A70069F09D /* WebService.swift in Sources */,
 				493480342B308B550069F09D /* SceneDelegate.swift in Sources */,
+				4934808B2B34491A0069F09D /* CurrencyTableCVCell.swift in Sources */,
 				493480862B31E2CF0069F09D /* ChartViewModel.swift in Sources */,
 				493480822B31B5FA0069F09D /* ChartViewController.swift in Sources */,
+				4934808E2B35B6F70069F09D /* Utility.swift in Sources */,
 				4934804E2B319D8A0069F09D /* CryptoViewModel.swift in Sources */,
 				493480792B31A7030069F09D /* CryptoTableViewCell.swift in Sources */,
 				493480842B31E1B00069F09D /* CryptoCandle.swift in Sources */,
@@ -229,14 +249,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		493480372B308B550069F09D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				493480382B308B550069F09D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4934803C2B308B560069F09D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -379,7 +391,6 @@
 				INFOPLIST_FILE = CryptoCrazyMVVMRx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -407,7 +418,6 @@
 				INFOPLIST_FILE = CryptoCrazyMVVMRx/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

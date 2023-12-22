@@ -16,7 +16,7 @@ class CryptoViewModel{
     let error : PublishSubject<String> = PublishSubject()
     let loading : PublishSubject<Bool> = PublishSubject()
     
-    func requestData(){
+     func requestData() {
         self.loading.onNext(true)
         let url = URL(string: "https://api.coincap.io/v2/assets")!
         

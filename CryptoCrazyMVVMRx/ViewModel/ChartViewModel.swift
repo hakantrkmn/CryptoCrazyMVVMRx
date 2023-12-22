@@ -32,5 +32,7 @@ class ChartViewModel{
                 self.error.onNext(err.localizedDescription)
             }
         }
+        
+
     }
 }

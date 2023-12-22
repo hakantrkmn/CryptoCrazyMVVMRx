@@ -50,8 +50,6 @@ class WebService{
              let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {
                 // Decoding the Product type from JSON data using JSONDecoder() class.
             let candleData = try JSONDecoder().decode(CandleData.self, from: jsonData)
-                 print(jsonData)
-
                  completion(.success(candleData))
              }
           } catch {

@@ -21,7 +21,7 @@ struct CryptoCandle : Codable {
     let low : String?
     let close : String?
     let volume : String?
-    let period : Int?
+    let period : Double?
 
     enum CodingKeys: String, CodingKey {
 
@@ -40,7 +40,7 @@ struct CryptoCandle : Codable {
         low = try values.decodeIfPresent(String.self, forKey: .low)
         close = try values.decodeIfPresent(String.self, forKey: .close)
         volume = try values.decodeIfPresent(String.self, forKey: .volume)
-        period = try values.decodeIfPresent(Int.self, forKey: .period)
+        period = try values.decodeIfPresent(Double.self, forKey: .period)
     }
 
 }

@@ -26,7 +26,7 @@ class CryptoTableViewCell: UITableViewCell {
     public var item : Crypto!{
         didSet{
             self.nameLabel.text = item.name
-            self.priceCell.text = item.priceUsd
+            self.priceCell.text = item.priceUsd?.DoubleToDecimal()
         }
     }
     
